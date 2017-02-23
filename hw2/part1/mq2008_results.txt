@@ -1,0 +1,857 @@
+MQ2008 Dataset:
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 0 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	MART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] MART's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.7563
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 1 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	RankNet
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] RankNet's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.4652
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 2 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	RankBoost
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] RankBoost's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.4687
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 3 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	AdaRank
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] AdaRank's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.4857
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 4 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	Coordinate Ascent
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] Coordinate Ascent's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.4756
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 5 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaRank
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] LambdaRank's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.2458
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 6 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	LambdaMART
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] LambdaMART's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.8106
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 7 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	ListNet
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] ListNet's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+NDCG@10 on test data: 0.4196
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 8 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -silent -tc 10 -round 100
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	Random Forests
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+
+[+] Random Forests's Parameters:
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+b[1]      | 0.6045    | 
+b[2]      | 0.5148    | 
+b[3]      | 0.5646    | 
+b[4]      | 0.5114    | 
+b[5]      | 0.5539    | 
+b[6]      | 0.5741    | 
+b[7]      | 0.5767    | 
+b[8]      | 0.5589    | 
+b[9]      | 0.5236    | 
+b[10]     | 0.5594    | 
+b[11]     | 0.5784    | 
+b[12]     | 0.5414    | 
+b[13]     | 0.5607    | 
+b[14]     | 0.5617    | 
+b[15]     | 0.5463    | 
+b[16]     | 0.4923    | 
+b[17]     | 0.5711    | 
+b[18]     | 0.5589    | 
+b[19]     | 0.5166    | 
+b[20]     | 0.5378    | 
+b[21]     | 0.5997    | 
+b[22]     | 0.519     | 
+b[23]     | 0.5709    | 
+b[24]     | 0.5182    | 
+b[25]     | 0.5412    | 
+b[26]     | 0.5348    | 
+b[27]     | 0.5346    | 
+b[28]     | 0.5364    | 
+b[29]     | 0.555     | 
+b[30]     | 0.5331    | 
+b[31]     | 0.5313    | 
+b[32]     | 0.542     | 
+b[33]     | 0.5801    | 
+b[34]     | 0.5637    | 
+b[35]     | 0.5468    | 
+b[36]     | 0.5141    | 
+b[37]     | 0.5547    | 
+b[38]     | 0.5228    | 
+b[39]     | 0.5424    | 
+b[40]     | 0.5177    | 
+b[41]     | 0.5455    | 
+b[42]     | 0.5551    | 
+b[43]     | 0.5092    | 
+b[44]     | 0.516     | 
+b[45]     | 0.5631    | 
+b[46]     | 0.5734    | 
+b[47]     | 0.5414    | 
+b[48]     | 0.561     | 
+b[49]     | 0.5769    | 
+b[50]     | 0.5282    | 
+b[51]     | 0.552     | 
+b[52]     | 0.5751    | 
+b[53]     | 0.5787    | 
+b[54]     | 0.5266    | 
+b[55]     | 0.5329    | 
+b[56]     | 0.5746    | 
+b[57]     | 0.5601    | 
+b[58]     | 0.5311    | 
+b[59]     | 0.5352    | 
+b[60]     | 0.5657    | 
+b[61]     | 0.5277    | 
+b[62]     | 0.5604    | 
+b[63]     | 0.509     | 
+b[64]     | 0.5567    | 
+b[65]     | 0.5238    | 
+b[66]     | 0.5502    | 
+b[67]     | 0.53      | 
+b[68]     | 0.5389    | 
+b[69]     | 0.5214    | 
+b[70]     | 0.5625    | 
+b[71]     | 0.5036    | 
+b[72]     | 0.5198    | 
+b[73]     | 0.5348    | 
+b[74]     | 0.5515    | 
+b[75]     | 0.5623    | 
+b[76]     | 0.5567    | 
+b[77]     | 0.5524    | 
+b[78]     | 0.5736    | 
+b[79]     | 0.5659    | 
+b[80]     | 0.5255    | 
+b[81]     | 0.5601    | 
+b[82]     | 0.5872    | 
+b[83]     | 0.5544    | 
+b[84]     | 0.5553    | 
+b[85]     | 0.5266    | 
+b[86]     | 0.5288    | 
+b[87]     | 0.5377    | 
+b[88]     | 0.5485    | 
+b[89]     | 0.5136    | 
+b[90]     | 0.5252    | 
+b[91]     | 0.537     | 
+b[92]     | 0.5641    | 
+b[93]     | 0.5536    | 
+b[94]     | 0.5374    | 
+b[95]     | 0.5101    | 
+b[96]     | 0.5248    | 
+b[97]     | 0.5306    | 
+b[98]     | 0.5439    | 
+b[99]     | 0.5382    | 
+b[100]    | 0.5896    | 
+b[101]    | 0.5074    | 
+b[102]    | 0.541     | 
+b[103]    | 0.5524    | 
+b[104]    | 0.5834    | 
+b[105]    | 0.5465    | 
+b[106]    | 0.5463    | 
+b[107]    | 0.5613    | 
+b[108]    | 0.5656    | 
+b[109]    | 0.5386    | 
+b[110]    | 0.5071    | 
+b[111]    | 0.5526    | 
+b[112]    | 0.5812    | 
+b[113]    | 0.5172    | 
+b[114]    | 0.5278    | 
+b[115]    | 0.5736    | 
+b[116]    | 0.5128    | 
+b[117]    | 0.5551    | 
+b[118]    | 0.5232    | 
+b[119]    | 0.511     | 
+b[120]    | 0.5473    | 
+b[121]    | 0.5422    | 
+b[122]    | 0.5116    | 
+b[123]    | 0.5158    | 
+b[124]    | 0.5723    | 
+b[125]    | 0.5482    | 
+b[126]    | 0.5424    | 
+b[127]    | 0.5168    | 
+b[128]    | 0.5418    | 
+b[129]    | 0.5519    | 
+b[130]    | 0.5597    | 
+b[131]    | 0.5453    | 
+b[132]    | 0.5064    | 
+b[133]    | 0.5555    | 
+b[134]    | 0.5072    | 
+b[135]    | 0.5637    | 
+b[136]    | 0.5331    | 
+b[137]    | 0.539     | 
+b[138]    | 0.5636    | 
+b[139]    | 0.5579    | 
+b[140]    | 0.5741    | 
+b[141]    | 0.5311    | 
+b[142]    | 0.5373    | 
+b[143]    | 0.5745    | 
+b[144]    | 0.5806    | 
+b[145]    | 0.5648    | 
+b[146]    | 0.5729    | 
+b[147]    | 0.5615    | 
+b[148]    | 0.5493    | 
+b[149]    | 0.5357    | 
+b[150]    | 0.5703    | 
+b[151]    | 0.5305    | 
+b[152]    | 0.5939    | 
+b[153]    | 0.5324    | 
+b[154]    | 0.4927    | 
+b[155]    | 0.555     | 
+b[156]    | 0.5312    | 
+b[157]    | 0.5421    | 
+b[158]    | 0.5681    | 
+b[159]    | 0.5498    | 
+b[160]    | 0.5385    | 
+b[161]    | 0.5182    | 
+b[162]    | 0.5807    | 
+b[163]    | 0.5231    | 
+b[164]    | 0.5698    | 
+b[165]    | 0.5491    | 
+b[166]    | 0.5133    | 
+b[167]    | 0.5728    | 
+b[168]    | 0.5713    | 
+b[169]    | 0.5012    | 
+b[170]    | 0.5498    | 
+b[171]    | 0.5498    | 
+b[172]    | 0.5596    | 
+b[173]    | 0.5509    | 
+b[174]    | 0.524     | 
+b[175]    | 0.545     | 
+b[176]    | 0.5245    | 
+b[177]    | 0.5458    | 
+b[178]    | 0.5203    | 
+b[179]    | 0.5103    | 
+b[180]    | 0.532     | 
+b[181]    | 0.5618    | 
+b[182]    | 0.5562    | 
+b[183]    | 0.5253    | 
+b[184]    | 0.5621    | 
+b[185]    | 0.6045    | 
+b[186]    | 0.5444    | 
+b[187]    | 0.5461    | 
+b[188]    | 0.5649    | 
+b[189]    | 0.5058    | 
+b[190]    | 0.5738    | 
+b[191]    | 0.6127    | 
+b[192]    | 0.5715    | 
+b[193]    | 0.5121    | 
+b[194]    | 0.5844    | 
+b[195]    | 0.5046    | 
+b[196]    | 0.5623    | 
+b[197]    | 0.5452    | 
+b[198]    | 0.5469    | 
+b[199]    | 0.5627    | 
+b[200]    | 0.5598    | 
+b[201]    | 0.5072    | 
+b[202]    | 0.5295    | 
+b[203]    | 0.5982    | 
+b[204]    | 0.5479    | 
+b[205]    | 0.5217    | 
+b[206]    | 0.5857    | 
+b[207]    | 0.5264    | 
+b[208]    | 0.5322    | 
+b[209]    | 0.5585    | 
+b[210]    | 0.5539    | 
+b[211]    | 0.564     | 
+b[212]    | 0.5559    | 
+b[213]    | 0.5559    | 
+b[214]    | 0.5786    | 
+b[215]    | 0.5013    | 
+b[216]    | 0.5526    | 
+b[217]    | 0.5563    | 
+b[218]    | 0.559     | 
+b[219]    | 0.5478    | 
+b[220]    | 0.5556    | 
+b[221]    | 0.5295    | 
+b[222]    | 0.5866    | 
+b[223]    | 0.5347    | 
+b[224]    | 0.5194    | 
+b[225]    | 0.5536    | 
+b[226]    | 0.546     | 
+b[227]    | 0.567     | 
+b[228]    | 0.5468    | 
+b[229]    | 0.5437    | 
+b[230]    | 0.5713    | 
+b[231]    | 0.5529    | 
+b[232]    | 0.5928    | 
+b[233]    | 0.5612    | 
+b[234]    | 0.5297    | 
+b[235]    | 0.5321    | 
+b[236]    | 0.5371    | 
+b[237]    | 0.5553    | 
+b[238]    | 0.5294    | 
+b[239]    | 0.5648    | 
+b[240]    | 0.5648    | 
+b[241]    | 0.5237    | 
+b[242]    | 0.5672    | 
+b[243]    | 0.5358    | 
+b[244]    | 0.5725    | 
+b[245]    | 0.5613    | 
+b[246]    | 0.5538    | 
+b[247]    | 0.4989    | 
+b[248]    | 0.5427    | 
+b[249]    | 0.5529    | 
+b[250]    | 0.5211    | 
+b[251]    | 0.4875    | 
+b[252]    | 0.5554    | 
+b[253]    | 0.5544    | 
+b[254]    | 0.5885    | 
+b[255]    | 0.5423    | 
+b[256]    | 0.565     | 
+b[257]    | 0.5477    | 
+b[258]    | 0.5616    | 
+b[259]    | 0.5174    | 
+b[260]    | 0.5607    | 
+b[261]    | 0.5586    | 
+b[262]    | 0.564     | 
+b[263]    | 0.5022    | 
+b[264]    | 0.5181    | 
+b[265]    | 0.517     | 
+b[266]    | 0.5358    | 
+b[267]    | 0.5486    | 
+b[268]    | 0.5302    | 
+b[269]    | 0.5082    | 
+b[270]    | 0.5752    | 
+b[271]    | 0.5554    | 
+b[272]    | 0.5135    | 
+b[273]    | 0.5576    | 
+b[274]    | 0.4958    | 
+b[275]    | 0.5462    | 
+b[276]    | 0.5522    | 
+b[277]    | 0.5616    | 
+b[278]    | 0.5603    | 
+b[279]    | 0.5233    | 
+b[280]    | 0.511     | 
+b[281]    | 0.5208    | 
+b[282]    | 0.5261    | 
+b[283]    | 0.5268    | 
+b[284]    | 0.5644    | 
+b[285]    | 0.5541    | 
+b[286]    | 0.5077    | 
+b[287]    | 0.5159    | 
+b[288]    | 0.5246    | 
+b[289]    | 0.541     | 
+b[290]    | 0.5354    | 
+b[291]    | 0.5525    | 
+b[292]    | 0.5619    | 
+b[293]    | 0.4967    | 
+b[294]    | 0.5405    | 
+b[295]    | 0.5124    | 
+b[296]    | 0.5006    | 
+b[297]    | 0.5635    | 
+b[298]    | 0.555     | 
+b[299]    | 0.5091    | 
+b[300]    | 0.5685    | 
+------------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.6237
+NDCG@10 on validation data: 0.6121
+------------------------------------
+NDCG@10 on test data: 0.7095
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 2 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -tc 10 -round 100 -save rankboostmodel.txt
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	RankBoost
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: rankboostmodel.txt
+
+[+] RankBoost's Parameters:
+No. of rounds: 100
+No. of threshold candidates: 10
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+Initializing... [Done]
+------------------------------------------
+Training starts...
+--------------------------------------------------------------------
+#iter   | Sel. F.  | Threshold | Error     | NDCG@10-T | NDCG@10-V | 
+--------------------------------------------------------------------
+1       | 39       | 0.7       | 0.2539    | 0.6699    | 0.3855    | 
+2       | 23       | 0.5       | 0.1719    | 0.6412    | 0.3854    | 
+3       | 39       | 0.5       | 0.1151    | 0.639     | 0.3874    | 
+4       | 39       | 0.8       | 0.0954    | 0.575     | 0.4055    | 
+5       | 23       | 0.3       | 0.0865    | 0.5666    | 0.4013    | 
+6       | 25       | 0.1       | 0.0706    | 0.5042    | 0.413     | 
+7       | 23       | 0.3       | 0.0631    | 0.5037    | 0.413     | 
+8       | 16       | 0.1       | 0.0582    | 0.4657    | 0.4063    | 
+9       | 38       | 0.7       | 0.0601    | 0.4608    | 0.4109    | 
+10      | 25       | 0.3       | 0.045     | 0.4576    | 0.4162    | 
+11      | 16       | 0.1       | 0.0431    | 0.4534    | 0.4124    | 
+12      | 37       | 0.8       | 0.0433    | 0.4508    | 0.4162    | 
+13      | 23       | 0.2       | 0.0359    | 0.4508    | 0.4162    | 
+14      | 29       | 0.6       | 0.0319    | 0.4414    | 0.4186    | 
+15      | 16       | 0.1       | 0.0322    | 0.4425    | 0.417     | 
+16      | 40       | 0.8       | 0.0312    | 0.4375    | 0.4193    | 
+17      | 28       | 0.8       | 0.029     | 0.4326    | 0.4167    | 
+18      | 23       | 0.2       | 0.028     | 0.4326    | 0.4167    | 
+19      | 17       | 0.3       | 0.027     | 0.4308    | 0.4163    | 
+20      | 39       | 0.9       | 0.025     | 0.4265    | 0.4136    | 
+21      | 13       | 0.7       | 0.0243    | 0.4283    | 0.4186    | 
+22      | 16       | 0.1       | 0.0227    | 0.4277    | 0.4169    | 
+23      | 28       | 0.8       | 0.0223    | 0.4272    | 0.4165    | 
+24      | 23       | 0.3       | 0.022     | 0.426     | 0.4141    | 
+25      | 44       | 0.3       | 0.0211    | 0.4252    | 0.4149    | 
+26      | 34       | 0.4       | 0.0207    | 0.4254    | 0.4168    | 
+27      | 13       | 0.7       | 0.0185    | 0.4272    | 0.4197    | 
+28      | 23       | 0.2       | 0.0181    | 0.4272    | 0.4197    | 
+29      | 17       | 0.3       | 0.0178    | 0.4293    | 0.4226    | 
+30      | 34       | 0.4       | 0.0171    | 0.4288    | 0.4221    | 
+31      | 40       | 0.9       | 0.0167    | 0.4278    | 0.4208    | 
+32      | 44       | 0.1       | 0.0166    | 0.4274    | 0.4217    | 
+33      | 16       | 0.1       | 0.0163    | 0.4276    | 0.4229    | 
+34      | 28       | 0.8       | 0.0163    | 0.4268    | 0.4207    | 
+35      | 39       | 0.9       | 0.015     | 0.4268    | 0.4209    | 
+36      | 29       | 0.6       | 0.0144    | 0.4276    | 0.4214    | 
+37      | 44       | 0.1       | 0.0144    | 0.4272    | 0.4209    | 
+38      | 23       | 0.2       | 0.0139    | 0.4272    | 0.4209    | 
+39      | 34       | 0.4       | 0.0134    | 0.4268    | 0.4205    | 
+40      | 17       | 0.1       | 0.0134    | 0.4243    | 0.4185    | 
+41      | 44       | 0.3       | 0.0128    | 0.4227    | 0.4183    | 
+42      | 40       | 0.9       | 0.0124    | 0.4232    | 0.419     | 
+43      | 44       | 0.1       | 0.0114    | 0.4229    | 0.4194    | 
+44      | 28       | 0.8       | 0.0113    | 0.4229    | 0.4194    | 
+45      | 16       | 0.1       | 0.0117    | 0.422     | 0.4183    | 
+46      | 3        | 0.9       | 0.0112    | 0.4221    | 0.4184    | 
+47      | 34       | 0.4       | 0.011     | 0.4207    | 0.4164    | 
+48      | 40       | 0.7       | 0.0108    | 0.4225    | 0.4202    | 
+49      | 17       | 0.6       | 0.0105    | 0.4225    | 0.4201    | 
+50      | 23       | 0.1       | 0.0102    | 0.4225    | 0.4201    | 
+51      | 44       | 0.1       | 0.0098    | 0.4227    | 0.4206    | 
+52      | 28       | 0.9       | 0.0093    | 0.4224    | 0.4212    | 
+53      | 23       | 0.2       | 0.009     | 0.423     | 0.4223    | 
+54      | 17       | 0.6       | 0.009     | 0.4234    | 0.4222    | 
+55      | 34       | 0.4       | 0.0089    | 0.4228    | 0.4209    | 
+56      | 16       | 0.1       | 0.0088    | 0.4219    | 0.4204    | 
+57      | 3        | 0.9       | 0.0087    | 0.4222    | 0.4211    | 
+58      | 44       | 0.1       | 0.0085    | 0.4223    | 0.4209    | 
+59      | 40       | 0.9       | 0.0085    | 0.4225    | 0.4214    | 
+60      | 23       | 0.1       | 0.0078    | 0.4225    | 0.4214    | 
+61      | 17       | 0.6       | 0.0078    | 0.4222    | 0.4213    | 
+62      | 28       | 0.9       | 0.0076    | 0.422     | 0.4211    | 
+63      | 44       | 0.1       | 0.0075    | 0.4226    | 0.4211    | 
+64      | 34       | 0.4       | 0.0073    | 0.4216    | 0.4193    | 
+65      | 39       | 0.9       | 0.0072    | 0.4228    | 0.4211    | 
+66      | 17       | 0.3       | 0.0068    | 0.4241    | 0.4208    | 
+67      | 23       | 0.1       | 0.0068    | 0.4241    | 0.4208    | 
+68      | 16       | 0.3       | 0.0067    | 0.4231    | 0.4195    | 
+69      | 3        | 0.9       | 0.0066    | 0.4228    | 0.4198    | 
+70      | 44       | 0.1       | 0.0064    | 0.4222    | 0.4198    | 
+71      | 28       | 0.9       | 0.0063    | 0.4222    | 0.4195    | 
+72      | 34       | 0.4       | 0.0061    | 0.4222    | 0.4193    | 
+73      | 40       | 0.9       | 0.006     | 0.4218    | 0.4193    | 
+74      | 23       | 0.1       | 0.0059    | 0.4218    | 0.4193    | 
+75      | 17       | 0.6       | 0.0059    | 0.4216    | 0.4188    | 
+76      | 44       | 0.1       | 0.0056    | 0.4209    | 0.4183    | 
+77      | 16       | 0.1       | 0.0056    | 0.4205    | 0.4173    | 
+78      | 28       | 0.9       | 0.0054    | 0.4208    | 0.4175    | 
+79      | 23       | 0.1       | 0.0052    | 0.4208    | 0.4175    | 
+80      | 17       | 0.6       | 0.0051    | 0.4206    | 0.4175    | 
+81      | 3        | 0.9       | 0.0051    | 0.4207    | 0.4178    | 
+82      | 34       | 0.4       | 0.005     | 0.4203    | 0.4172    | 
+83      | 44       | 0.1       | 0.0049    | 0.4204    | 0.4175    | 
+84      | 40       | 0.9       | 0.0047    | 0.4198    | 0.4172    | 
+85      | 16       | 0.3       | 0.0048    | 0.4198    | 0.4172    | 
+86      | 27       | 0.9       | 0.0046    | 0.4196    | 0.4172    | 
+87      | 23       | 0.1       | 0.0046    | 0.4196    | 0.4172    | 
+88      | 44       | 0.3       | 0.0043    | 0.4193    | 0.4173    | 
+89      | 29       | 0.6       | 0.0043    | 0.4187    | 0.4169    | 
+90      | 16       | 0.6       | 0.0043    | 0.419     | 0.4174    | 
+91      | 17       | 0.6       | 0.0042    | 0.4185    | 0.4169    | 
+92      | 23       | 0.1       | 0.0041    | 0.4185    | 0.4169    | 
+93      | 28       | 0.9       | 0.0041    | 0.4185    | 0.4169    | 
+94      | 34       | 0.4       | 0.004     | 0.4192    | 0.4176    | 
+95      | 44       | 0.1       | 0.0038    | 0.4185    | 0.4169    | 
+96      | 16       | 0.6       | 0.0038    | 0.4186    | 0.4172    | 
+97      | 27       | 0.9       | 0.0037    | 0.4187    | 0.4174    | 
+98      | 39       | 0.9       | 0.0036    | 0.4188    | 0.4179    | 
+99      | 23       | 0.1       | 0.0036    | 0.4188    | 0.4179    | 
+100     | 17       | 0.6       | 0.0035    | 0.4183    | 0.4171    | 
+--------------------------------------------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.4276
+NDCG@10 on validation data: 0.4229
+---------------------------------
+NDCG@10 on test data: 0.4687
+
+Model saved to: rankboostmodel.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+java -jar ../RankLib-2.1-patched.jar -train 10k.txt -ranker 3 -test 2k.txt -validate 5k.txt -metric2t NDCG@10 -tc 10 -round 100 -save adarankmodel.txt
+
+[+] General Parameters:
+Training data:	10k.txt
+Test data:	2k.txt
+Validation data:	5k.txt
+Feature vector representation: Dense.
+Ranking method:	AdaRank
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: adarankmodel.txt
+
+[+] AdaRank's Parameters:
+No. of rounds: 100
+Train with 'enequeue': Yes
+Tolerance: 0.002
+Max Sel. Count: 5
+
+Reading feature file [10k.txt]... [Done.]            
+(244 ranked lists, 10000 entries read)
+Reading feature file [5k.txt]... [Done.]            
+(122 ranked lists, 5000 entries read)
+Reading feature file [2k.txt]... [Done.]            
+(50 ranked lists, 2000 entries read)
+Initializing... [Done]
+---------------------------
+Training starts...
+--------------------------------------------------------
+#iter   | Sel. F.  | NDCG@10-T | NDCG@10-V | Status    | 
+--------------------------------------------------------
+1       | 39       | 0.4177    | 0.3976    | OK        | 
+2       | 39       |           |           | ROLLBACK  | 
+3       | 23       | 0.408     | 0.3895    | OK        | 
+4       | 23       |           |           | ROLLBACK  | 
+5       | 21       | 0.3748    | 0.3856    | OK        | 
+6       | 38       | 0.373     | 0.3713    | OK        | 
+7       | 38       |           |           | ROLLBACK  | 
+8       | 21       | 0.3748    | 0.3856    | OK        | 
+9       | 37       | 0.3761    | 0.3846    | OK        | 
+10      | 40       | 0.3717    | 0.3742    | DAMN      | 
+10      | 38       | 0.3732    | 0.3729    | DAMN      | 
+10      | 23       | 0.3999    | 0.4046    | OK        | 
+11      | 23       | 0.4096    | 0.4118    | OK        | 
+12      | 23       | 0.4098    | 0.4069    | OK        | 
+13      | 23       | 0.4121    | 0.4069    | OK        | 
+14      | 23       | 0.4115    | 0.4034    | OK        | 
+15      | 32       | 0.4186    | 0.4209    | OK        | 
+16      | 32       | 0.4195    | 0.4219    | OK        | 
+17      | 32       | 0.4184    | 0.428     | OK        | 
+18      | 32       | 0.4139    | 0.4173    | DAMN      | 
+18      | 32       | 0.4139    | 0.4173    | DAMN      | 
+--------------------------------------------------------
+Finished sucessfully.
+NDCG@10 on training data: 0.4184
+NDCG@10 on validation data: 0.428
+---------------------------------
+NDCG@10 on test data: 0.4857
+
+Model saved to: adarankmodel.txt
