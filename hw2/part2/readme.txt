@@ -10,3 +10,12 @@ http://stackoverflow.com/questions/15188042/where-are-hadoop-jar-files-in-hadoop
 
 
 export CLASSPATH=".:alljars/*"
+
+
+TO RUN:
+java TrecWordCount input output
+
+/input/ should contain the lines-trec.txt (not included in git cuz too big)
+/output will be created
+
+*** as of right now, code compiles but throws runtime error (java.lang.NoClassDefFoundError: org/apache/hadoop/yarn/util/Apps) 
