@@ -9,8 +9,10 @@ compile issue solved from this:
 http://stackoverflow.com/questions/15188042/where-are-hadoop-jar-files-in-hadoop-2
 
 
-export CLASSPATH=".:alljars/*"
 
+TO COMPILE:
+export CLASSPATH=".:alljars/*"
+javac TrecWordCount.java
 
 TO RUN:
 java TrecWordCount input output
