@@ -15,7 +15,8 @@ export CLASSPATH=".:alljars/*"
 javac TrecWordCount.java
 
 TO RUN:
-java TrecWordCount input output
+jar cf wc.jar TrecWordCount*.class
+hadoop jar wc.jar TrecWordCount input output
 
 /input/ should contain the lines-trec.txt (not included in git cuz too big)
 /output will be created
