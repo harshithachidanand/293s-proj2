@@ -10,15 +10,28 @@ http://stackoverflow.com/questions/15188042/where-are-hadoop-jar-files-in-hadoop
 
 
 
-TO COMPILE:
+WORD COUNT JOB:
+
 export CLASSPATH=".:alljars/*"
 javac TrecWordCount.java
-
-TO RUN:
 jar cf wc.jar TrecWordCount*.class
 hadoop jar wc.jar TrecWordCount input output
 
-/input/ should contain the lines-trec.txt (not included in git cuz too big)
+notes:
+/input/ should contain lines-trec.txt
 /output will be created
 
-*** as of right now, code compiles but throws runtime error (java.lang.NoClassDefFoundError: org/apache/hadoop/yarn/util/Apps) 
+
+INVERTED INDEX JOB:
+
+mkdir input2
+python parse.py (assuming you have lines-trec.txt inside /input directory)
+
+export CLASSPATH=".:alljars/*"
+javac TrecInvertedIndex.java
+jar cf iv.jar TrecInvertedIndex*.class
+hadoop jar iv.jar TrecInvertedIndex input2 output2
+
+notes:
+program will run out of heap space, so I included an input3 directory which only has 10 documents
+** there is an issue with my code, the inverted index list contains duplicates
