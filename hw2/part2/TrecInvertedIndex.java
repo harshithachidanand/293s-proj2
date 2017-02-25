@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.HashSet;
 import java.lang.StringBuffer;
 
 import org.apache.hadoop.conf.Configuration;
@@ -53,11 +54,16 @@ public class TrecInvertedIndex {
 	public static class InvertedIndexReducer extends Reducer<Text,Text,Text,Text> {
 		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 			StringBuffer buf = new StringBuffer();
+			HashSet<String> unique = new HashSet<>();
 			for (Text val : values) {
-				if(buf.length() != 0){
-					buf.append(" ");
+				String docID = val.toString();
+				if(!unique.contains(docID)){
+					unique.add(docID);
+					if(buf.length() != 0){
+						buf.append(", ");
+					}
+					buf.append(docID);
 				}
-				buf.append(val.toString());
 			}
 			Text docList = new Text();
 			docList.set(buf.toString());

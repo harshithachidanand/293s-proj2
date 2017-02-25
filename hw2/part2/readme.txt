@@ -34,4 +34,3 @@ hadoop jar iv.jar TrecInvertedIndex input2 output2
 
 notes:
 program will run out of heap space, so I included an input3 directory which only has 10 documents
-** there is an issue with my code, the inverted index list contains duplicates
