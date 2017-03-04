@@ -37,16 +37,23 @@ public class TrecInvertedIndex {
 
 			document.set(docID);
 			
+			HashSet<String> uniqueWords = new HashSet<>();
 			String[] titleWords = docTitle.split(" ");
 			for(String s : titleWords){
-				word.set(s);
-				context.write(word,document);
+				if(!uniqueWords.contains(s)){
+					uniqueWords.add(s);
+					word.set(s);
+					context.write(word,document);
+				}
 			}
 
 			String[] bodyWords = docBody.split(" ");
 			for(String s : bodyWords){
-				word.set(s);
-				context.write(word,document);
+				if(!uniqueWords.contains(s)){
+					uniqueWords.add(s);
+					word.set(s);
+					context.write(word,document);
+				}
 			}
 		}
 	}
